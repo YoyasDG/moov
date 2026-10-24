@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horarios · Möov Aerial Studio</title>
+<meta name="description" content="Horarios de clases Kids, Junior y Adults.">
+<link rel="icon" type="image/png" href="img/logo-purple.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="sw" viewBox="0 0 600 600">
+      <path d="M40 470 C 40 380, 150 380, 150 300 S 60 200, 140 140 S 300 120, 300 230 S 420 360, 470 260 S 560 90, 470 60" fill="none" stroke="currentColor" stroke-width="44" stroke-linecap="round"/>
+      <circle cx="380" cy="80" r="22" fill="currentColor"/>
+      <circle cx="450" cy="70" r="22" fill="currentColor"/>
+      <circle cx="70" cy="545" r="20" fill="currentColor"/>
+    </symbol>
+  </defs>
+</svg>
+<nav id="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="nav-logo"><img src="img/logo-purple.png" alt="Möov Aerial Studio"></a>
+    <button class="burger" id="burger" aria-label="Abrir menú">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Inicio</a></li><li><a href="horarios.html" class="active">Horarios</a></li><li><a href="mensualidades.html">Mensualidades</a></li>
+      <li><a href="index.html#contacto">Contacto</a></li>
+      <li><a href="sistema.html" class="nav-cta">Sistema</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-head">
+  <svg class="swirl" viewBox="0 0 600 600" aria-hidden="true"><use href="#sw"/></svg>
+  <div class="wrap">
+    <h1 class="display">Horarios</h1>
+    <p>Grupos por edad de lunes a sábado. Elige el que mejor se acomode a tu semana.</p>
+  </div>
+</header>
+
+<section style="padding-top:20px">
+  <div class="wrap">
+    <div class="sched">
+      <div class="sched-card reveal">
+        <div class="group-title"><span class="display">Kids</span><small>+7 años</small></div>
+        <div class="row"><div class="name">Aéreo Kids 1<span class="days">Lunes, miércoles y viernes</span></div><div class="time">4:30 – 5:30 pm</div></div>
+        <div class="row"><div class="name">Aéreo Kids 2<span class="days">Martes y jueves</span></div><div class="time">5:30 – 6:30 pm</div></div>
+      </div>
+      <div class="sched-card tall reveal">
+        <div class="group-title"><span class="display">Adults</span><small>+16 años</small></div>
+        <div class="row"><div class="name">Aéreo &amp; Flex 1<span class="days">Lunes, miércoles y viernes</span></div><div class="time">6:30 – 8:00 pm</div></div>
+        <div class="row"><div class="name">Aéreo &amp; Flex 2<span class="days">Martes y jueves</span></div><div class="time">8:00 – 9:30 pm</div></div>
+        <div class="row"><div class="name">Aéreo Matutino<span class="days">Martes y jueves</span></div><div class="time">8:30 – 10:00 am</div></div>
+        <div class="row"><div class="name">Aéreo Sabatino<span class="days">Sábados</span></div><div class="time">11:00 am – 12:30 pm</div></div>
+      </div>
+      <div class="sched-card reveal">
+        <div class="group-title"><span class="display">Junior</span><small>+10 años</small></div>
+        <div class="row"><div class="name">Aéreo Jr.<span class="days">Lunes, miércoles y viernes</span></div><div class="time">5:30 – 6:30 pm</div></div>
+        <div class="row"><div class="name">Aéreo Jr.<span class="days">Martes y jueves</span></div><div class="time">6:30 – 7:30 pm</div></div>
+      </div>
+    </div>
+
+    <div class="week reveal">
+      <div class="sec-head" style="margin:70px 0 24px"><p class="kicker">Vista semanal</p><h2 class="display">Tu semana en Möov</h2></div>
+      <div class="week-wrap">
+        <table>
+          <thead><tr><th>Hora</th><th>Lunes</th><th>Martes</th><th>Miércoles</th><th>Jueves</th><th>Viernes</th><th>Sábado</th></tr></thead>
+          <tbody><tr><td>8:30 – 10:00 am</td><td></td><td><span class="pill a">Aéreo Matutino</span></td><td></td><td><span class="pill a">Aéreo Matutino</span></td><td></td><td></td></tr><tr><td>11:00 am – 12:30 pm</td><td></td><td></td><td></td><td></td><td></td><td><span class="pill a">Aéreo Sabatino</span></td></tr><tr><td>4:30 – 5:30 pm</td><td><span class="pill k">Kids 1</span></td><td></td><td><span class="pill k">Kids 1</span></td><td></td><td><span class="pill k">Kids 1</span></td><td></td></tr><tr><td>5:30 – 6:30 pm</td><td><span class="pill j">Aéreo Jr.</span></td><td><span class="pill k">Kids 2</span></td><td><span class="pill j">Aéreo Jr.</span></td><td><span class="pill k">Kids 2</span></td><td><span class="pill j">Aéreo Jr.</span></td><td></td></tr><tr><td>6:30 – 7:30 pm</td><td></td><td><span class="pill j">Aéreo Jr.</span></td><td></td><td><span class="pill j">Aéreo Jr.</span></td><td></td><td></td></tr><tr><td>6:30 – 8:00 pm</td><td><span class="pill a">Aéreo &amp; Flex 1</span></td><td></td><td><span class="pill a">Aéreo &amp; Flex 1</span></td><td></td><td><span class="pill a">Aéreo &amp; Flex 1</span></td><td></td></tr><tr><td>8:00 – 9:30 pm</td><td></td><td><span class="pill a">Aéreo &amp; Flex 2</span></td><td></td><td><span class="pill a">Aéreo &amp; Flex 2</span></td><td></td><td></td></tr></tbody>
+        </table>
+      </div>
+      <div class="legend"><span><span class="pill k">Kids</span> +7 años</span><span><span class="pill j">Junior</span> +10 años</span><span><span class="pill a">Adults</span> +16 años</span></div>
+    </div>
+
+    <div class="actions reveal" style="margin-top:50px;justify-content:center">
+      <a href="mensualidades.html" class="btn btn-primary">Ver mensualidades <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="index.html#contacto" class="btn btn-soft">Apartar mi lugar</a>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap foot">
+    <img src="img/logo-white.png" alt="Möov Aerial Studio">
+    <div class="foot-links"><a href="index.html">Inicio</a><a href="horarios.html">Horarios</a><a href="mensualidades.html">Mensualidades</a><a href="sistema.html">Sistema</a></div>
+    <div class="socials">
+      <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="#fff"/></svg></a>
+      <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M15 3h-3a4 4 0 00-4 4v3H5v4h3v7h4v-7h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+      <a href="#" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M20.5 3.5A11 11 0 003.3 17.2L2 22l4.9-1.3A11 11 0 0020.5 3.5z"/></svg></a>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:28px">© 2026 Möov Aerial Studio</div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

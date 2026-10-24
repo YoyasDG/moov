@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistema · Möov Aerial Studio</title>
+<meta name="description" content="Acceso al sistema de alumnas.">
+<link rel="icon" type="image/png" href="img/logo-purple.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="sw" viewBox="0 0 600 600">
+      <path d="M40 470 C 40 380, 150 380, 150 300 S 60 200, 140 140 S 300 120, 300 230 S 420 360, 470 260 S 560 90, 470 60" fill="none" stroke="currentColor" stroke-width="44" stroke-linecap="round"/>
+      <circle cx="380" cy="80" r="22" fill="currentColor"/>
+      <circle cx="450" cy="70" r="22" fill="currentColor"/>
+      <circle cx="70" cy="545" r="20" fill="currentColor"/>
+    </symbol>
+  </defs>
+</svg>
+<nav id="nav" class="nav-simple">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="nav-logo"><img src="img/logo-purple.png" alt="Möov Aerial Studio"></a>
+    <button class="burger" id="burger" aria-label="Menú" hidden></button>
+    <ul class="nav-links" id="navLinks"><li><a href="index.html" class="back">← Volver al sitio</a></li></ul>
+  </div>
+</nav>
+
+<main class="login-page">
+  <div class="login-main">
+    <div class="login-card">
+      <form id="loginForm" novalidate>
+        <h1>Iniciar sesión</h1>
+        <p class="sub">Bienvenida de vuelta al estudio ✦</p>
+        <div class="field">
+          <label for="user">Usuario o correo</label>
+          <input id="user" type="text" placeholder="tu@correo.com" autocomplete="username" required>
+        </div>
+        <div class="field">
+          <label for="pass">Contraseña</label>
+          <div class="pass-wrap">
+            <input id="pass" type="password" placeholder="••••••••" autocomplete="current-password" required>
+            <button type="button" id="togglePass">Mostrar</button>
+          </div>
+        </div>
+        <div class="login-row">
+          <label><input type="checkbox" id="remember"> Recordarme</label>
+          <a href="#" id="forgot">¿Olvidaste tu contraseña?</a>
+        </div>
+        <button type="submit" class="btn btn-primary">Entrar al sistema</button>
+        <p class="msg" id="msg" role="alert"></p>
+        <div class="demo-hint">Demo: usuario <code>admin</code> · contraseña <code>moov123</code></div>
+      </form>
+
+      <div class="dash" id="dash">
+        <div class="dash-head">
+          <h2>Hola, <span id="dashName">admin</span></h2>
+          <button id="logout">Cerrar sesión</button>
+        </div>
+        <div class="dash-cards">
+          <div><strong>5</strong><small>Clases restantes</small></div>
+          <div><strong>12</strong><small>Asistencias</small></div>
+          <div><strong>1–5 nov</strong><small>Pago temprano</small></div>
+        </div>
+        <ul class="dash-list">
+          <li>Aéreo &amp; Flex 1 <span>Lun · 6:30 pm</span></li>
+          <li>Aéreo &amp; Flex 1 <span>Mié · 6:30 pm</span></li>
+          <li>Aéreo &amp; Flex 1 <span>Vie · 6:30 pm</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <aside class="login-side">
+    <svg class="swirl" viewBox="0 0 600 600" aria-hidden="true"><use href="#sw"/></svg>
+    <p class="kicker" style="color:var(--lilac-2)">Sistema Möov</p>
+    <h2 class="display">Tu estudio <span>en un clic</span></h2>
+    <p>Consulta tus clases, revisa tu mensualidad y lleva el control de tu asistencia.</p>
+    <ul class="features">
+      <li><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#cab3e9" stroke-width="2"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></span>Tu horario y próximas clases</li>
+      <li><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#cab3e9" stroke-width="2"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></span>Historial de asistencia</li>
+      <li><span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#cab3e9" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></span>Mensualidad y pago temprano</li>
+    </ul>
+  </aside>
+</main>
+<script src="js/main.js"></script>
+</body>
+</html>
